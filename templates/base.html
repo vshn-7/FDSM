@@ -1,0 +1,82 @@
+<style>
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 75px;
+    }
+    #home{
+        border: 2px solid rgb(23, 42, 44);
+        padding: 30px;
+    }
+    #home input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+    }
+    .button {
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+    #logout{
+        position:absolute;
+        top: 20px;
+        right: 30px;
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+</style>
+<body style = "background-color: #f7cac9;">
+<h1>Welcome to FDSM</h1> 
+<section id="home">
+<h2>Welcome {{name}} . Thanks for logging in
+    <form action="back1">
+        <button id="logout" name="details" type="submit">Logout</button> 
+    </form>
+</h2>   
+    <form action="Amigos">
+    <button class="button" name="details" type="submit">Amigos</button>
+    Rating - {{rating1}}
+</form><br>
+   <form action="PFC">
+    <button class="button" name="details" type="submit">PFC</button>
+    Rating - {{rating2}}
+</form><br>
+    
+    <form action="CityBites">
+    <button class="button" name="details" type="submit">City Bites</button>
+    Rating - {{rating3}}
+</form>
+
+    <form action="Heritage">
+        <button class="button" name="details" type="submit">Heritage</button>
+        Rating - {{rating4}}
+    </form>
+    <form action="Miamore">
+    <button class="button" name="details" type="submit">Miamore</button>
+    Rating - {{rating5}}
+</form>
+
+<form action="prevorders">
+    <button class="button" name="details" type="submit">previousorders</button> 
+</form>
+</section>

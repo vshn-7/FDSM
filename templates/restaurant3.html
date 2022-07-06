@@ -1,0 +1,80 @@
+<style>
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 75px;
+    }
+    #home{
+        border: 2px solid rgb(23, 42, 44);
+        padding: 30px;
+    }
+    #home input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+    }
+    .button {
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+    #logout{
+        position:absolute;
+        top: 20px;
+        right: 30px;
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+</style>
+<body style = "background-color: #f7cac9;"></body>
+<h1>Please Accept Orders</h1> 
+<form action="logout">
+    <button id="logout" name="details" type="submit">Log Out</button>
+</form>
+<form action="requests2">    
+    <button class="button" name="details" type="submit">requests</button>
+</form>
+<form action="stats2">    
+    <button class="button" name="details" type="submit">stats</button>
+</form>
+<form action="edit2"> 
+    <section id="home">
+    <h2>Edit Menu</h2>   
+    {{error}}  <br>
+    <section id="home">
+    <h2>Noodles</h2>    
+    Veg Noodles - <input type="text" name="roti" value={{proti}}><br>
+    Egg Noodles -  <input type="text" name="non" value={{pnon}}><br>
+    Chicken Noodles -<input type="text" name="bab" value={{pbab}}><br>
+    </section>
+    <section id="home">
+    <h2>Dosa</h2>
+    Masala Dosa -  <input type="text" name="veg" value={{pveg}}><br>
+    Plain Dosa -  <input type="text" name="chic" value={{pchic}}><br>
+    Onion Dosa - <input type="text" name="ch" value={{pch}}><br>
+    </section>
+    <button class="button" name="details" type="submit">confirm</button>
+    </section>
+</form> 
+<form action="printbill3">    
+    <button class="button" name="details" type="submit">Print Bill</button>
+</form>

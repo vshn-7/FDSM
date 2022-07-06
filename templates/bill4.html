@@ -1,0 +1,42 @@
+<style>
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 75px;
+    }
+    #home{
+        border: 2px solid rgb(23, 42, 44);
+        padding: 30px;
+    }
+    #home input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+    }
+    .button {
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+</style>
+<body style = "background-color: #f7cac9;"></body>
+<h1>Order Accepted</h1>
+<h1>Total Money = <span> &#8377; </span>{{total}}/-</h1>
+{{error}}<br>
+<form action="review4">
+    <section id=home>
+        Restaurant Rating<input type="text" name="r" value=""><br>
+        Delivery Agent Rating<input type="text" name="d" value=""><br>
+    </section>
+    <button class="button" name="details" type="submit">submit</button>
+</form>

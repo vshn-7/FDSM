@@ -1,0 +1,61 @@
+<style>
+  h1{
+      margin: 0;
+      padding: 0 0 20px;
+      text-align: center;
+      font-size: 75px;
+  }
+  #home{
+      border: 2px solid rgb(23, 42, 44);
+      padding: 30px;
+  }
+  #home input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box; 
+  }
+  .button {
+      background-color: #130b3b;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 25px;
+  }
+</style>
+<body style = "background-color: #f7cac9;"></body>
+<h2>Edit taxes and Discounts</h2>
+  <form action="save">
+    <section id="home">
+    Amigos<br>
+    Tax <input type="text" name="v" value= {{v}}><br>
+    Discount <input type="text" name="s" value={{s}}><br>
+    </section>
+    <section id="home">
+    PFC<br> 
+    Tax <input type="text" name="p" value={{p}}><br>
+    Discount <input type="text" name="m" value={{m}}><br>
+    </section>
+    <section id="home">
+    City Bites<br>
+    Tax <input type="text" name="n" value={{n}}><br>
+    Discount <input type="text" name="g" value= {{g}}><br>
+    </section>
+    <section id="home">
+    Heritage<br>
+    Tax <input type="text" name="d" value={{d}}><br>
+    Discount <input type="text" name="a" value={{a}}><br>
+    </section>
+    <section id="home">
+    Miamore<br>
+    Tax <input type="text" name="x" value={{x}}><br>
+    Discount <input type="text" name="o" value={{o}}><br>
+    </section>
+    <button class="button" name="details" type="b">save</button>
+</form>

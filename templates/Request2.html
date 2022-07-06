@@ -1,0 +1,35 @@
+<style>
+    #home{
+        border: 2px solid rgb(23, 42, 44);
+        padding: 30px;
+    }
+    #home input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+    }
+    .button {
+       background-color: #130b3b;
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius: 25px;
+   }
+</style>
+<body style = "background-color: #f7cac9;"></body>
+<section id="home">
+{%for i in list %}
+{{i.0}} &nbsp {{i.1}}<br>
+{% endfor %}
+</section>
+{{error}}<br>
+<form action="back9">
+    <button class="button" name="details" type="submit">back</button>
+</form>

@@ -1,0 +1,100 @@
+{% load static %}
+<style>
+  #team{
+        border: 2px solid rgb(4, 35, 39);
+        border-radius: 100px;
+        padding: 30px;
+        text-align: center;
+        font-size: 30px;
+        color: darkblue;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Food delivery service system | Onlinefoodservice.com</title>
+    <link rel="stylesheet" href="{% static 'CSS/homestyle.css' %}">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap' %}" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+         <img src="{%static "images/pngwing.com.png" %}" alt="Onlinefoodservice.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Partners</a></li>
+            <li class="item"><a href="#contact">Our web Team</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Online Food Management Service</h1>
+        <p>We will provide you the vast variety of food, with the best quality and test. </p>
+        <p>Buy online with zero contact facility </p>
+        <form action="login">
+            <button class="btn">Signin/Signup</button>
+        </form>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+           {% load static %}  <img src="{% static "images/fromhome.png" %}" alt="">
+                <h2 class="h-secondary center">Online order service</h2>
+                <p class="center">Our team provides you the online food ordering facility. The fastest way 
+                    possible to book food free of waiting for booking a table at restaurants. </p>
+            </div>
+            <div class="box">
+              {% load static %}  <img src="{% static "images/roadhouse.jpg" %}" alt="">
+                <h2 class="h-secondary center">Direct order from best restaurants</h2>
+                <p class="center">We have partnership with teh best restaurants of the city having the top class
+                     chefs providing you the best quality foood .</p>
+            </div>
+            <div class="box">
+              {% load static %}  <img src="{% static "images/logo.JPG" %}" alt="">
+                <h2 class="h-secondary center">Food delivering</h2>
+                <p class="center">We provide free food delivery service from the best known restaurants of the 
+                    city try it out. The fastest delivery within half hour</p>
+            </div>
+          </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Partners</h1>
+        <div id="clients">
+            <div class="client-item">
+              {% load static %}     <img src="{% static "images/kfc.jpg" %}" alt="Our Partners">
+            </div>
+            <div class="client-item">
+              {% load static %}  <img src="{%static "images/pizzahut.jpg" %}" alt="Our Partners">
+            </div>
+          
+            <div class="client-item">
+              {% load static %} <img src="{%static "images/Burger_KING_logo.png" %}" alt="Our Partners">
+            </div>
+            <div class="client-item">
+              {% load static %}  <img src="{%static "images/myrestaurant.jpg" %}" alt="Our Partners">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Our Web Team</h1>
+        <div id="team"> 
+            <b>Gangaram Arvind Sudewad</b> <br>
+            <b>Ragala Abhishek </b> <br>
+            <b>Sailada Vishnu Vardhan</b> <br>
+        </div>
+    </section>
+
+</body>
+
+</html>

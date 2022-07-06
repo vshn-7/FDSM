@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+        <img src="{% static "images/pngwing.com.png" %}" class="logo">
+    <body>
+        <div class="loginbox">
+            <h1>Login here</h1>
+            {{error}}<br>
+            <form action="user">
+                <div class="custom-select" style="width: 200px;">
+                    <label for="type"><b>User Type</b></label>
+                    <select name="User type" id="user">
+                        <option value="Customer">Customer</option>
+                        <option value="Delivery agent">Delivery agent</option>
+                        <option value="restaurants">restaurants</option>
+                        <option value="Manager">Manager</option>
+                    </select>
+                </div><br>
+                <!--<p>User Type</p>-->
+                <!--<input type="text" name="" placeholder="Tell user Type">-->
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" name="pass" placeholder="Enter password">
+                <input type="submit" name="login" value="Login">
+                
+            </form>
+            <form action="signup">
+                 <div class="custom-select" style="width: 200px;">
+                    <label for="type"><b>User Type</b></label>
+                    <select name="User Type" id="user">
+                        <option value="Customer">Customer</option>
+                        <option value="Delivery agent">Delivery agent</option><br>
+                    </select><br>
+                    <input type="submit" name="signup" value="Sign Up">
+                </div>
+            </form>
+        </div> 
+    </body>
+
+
+</head>
+<body>
+    
+</body>
+</html>

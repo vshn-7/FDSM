@@ -1,0 +1,84 @@
+<style>
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 75px;
+    }
+    #home{
+        border: 2px solid rgb(23, 42, 44);
+        padding: 30px;
+    }
+    #home input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+    }
+    .button {
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+    #logout{
+        position:absolute;
+        top: 20px;
+        right: 30px;
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+</style>
+<body style = "background-color: #f7cac9;"></body>
+<h1>Please Accept Orders</h1> 
+<form action="logout">
+    <button id="logout" name="details" type="submit">Log Out</button>
+</form>
+
+<form action="stats">    
+    <button class="button" name="details" type="submit">stats</button>
+</form>
+<form action="edit"> 
+    <section id="home">
+    <h2>Edit Menu</h2>  
+    {{error}} <br>
+    <section id="home">
+    <h2>Veg Items</h2>    
+    Veg Biryani -  <input type="text" name="veg" value= {{p_veg}}><br>
+    Onion Salad -  <input type="text" name="salad" value={{p_salad}}><br>
+    Paneer Biryani -  <input type="text" name="pan" value={{p_pan}}><br>
+    Mixed Veg Curry - <input type="text" name="mix" value={{p_mix}}><br>
+    Roti - <input type="text" name="roti" value={{p_roti}}><br>
+    </section>
+    <section id="home">
+    <h2>Non Veg Items</h2>
+    Chicken Biryani -  <input type="text" name="non" value={{p_non}}><br>
+    Chicken Curry - <input type="text" name="chic" value={{p_chic}}><br>
+    Fish Curry -  <input type="text" name="fish" value={{p_fish}}><br>
+    </section>
+    <button class="button" name="details" type="submit">confirm</button>
+    </section>
+</form> 
+<form action="requests">    
+    <button class="button" name="details" type="submit">Previous Orders</button>
+</form>
+<form action="printbill1">    
+    <button class="button" name="details" type="submit">Print Bill</button>
+</form>
+
